@@ -16,9 +16,11 @@ function booksBorrowedCount(books) {
 }
 
 
-
-let sortAndSlice = array => array.sort((countA, countB) => countB.count - countA.count).slice(0, 5);
-
+// HELPER FUNCTION //
+function sortAndSlice(array) {
+  return array.sort((countA, countB) => countB.count - countA.count).slice(0, 5);
+} 
+//////////////////////  
 
 
 function getMostCommonGenres(books) {
